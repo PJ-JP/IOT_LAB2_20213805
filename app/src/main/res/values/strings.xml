@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">demo</string>
+    <string-array name="estados">
+        <item>Operativo</item>
+        <item>En reparación</item>
+        <item>Dado de baja</item>
+    </string-array>
+    <string-array name="tipos">
+        <item>Administrable</item>
+        <item>No administrable</item>
+    </string-array>
+</resources>
