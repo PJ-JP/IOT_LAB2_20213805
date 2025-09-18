@@ -12,8 +12,28 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Demo">
         <activity
-            android:name=".CrearSwitchActivity"
+            android:name=".ReporteActivity"
             android:exported="false" />
+        <activity
+            android:name=".CrearApointActivity"
+            android:exported="false"
+            android:label="Crear APoint"
+            android:parentActivityName=".ApointActivity" />
+        <activity
+            android:name=".ApointActivity"
+            android:exported="false"
+            android:label="APoints"
+            android:parentActivityName=".MainActivity" />
+        <activity
+            android:name=".DetallesApointActivity"
+            android:exported="false"
+            android:label="Actualizar APoint"
+            android:parentActivityName=".ApointActivity" />
+        <activity
+            android:name=".CrearSwitchActivity"
+            android:exported="false"
+            android:label="Crear Switch"
+            android:parentActivityName=".entity.SwitchActivity" />
         <activity
             android:name=".entity.SwitchActivity"
             android:exported="false"
@@ -21,7 +41,9 @@
             android:parentActivityName=".MainActivity" />
         <activity
             android:name=".DetallesSwitchActivity"
-            android:exported="false" />
+            android:exported="false"
+            android:label="Actualizar Switch"
+            android:parentActivityName=".entity.SwitchActivity" />
         <activity
             android:name=".CrearRouterActivity"
             android:exported="false"
