@@ -56,7 +56,7 @@ public class CrearApointActivity extends AppCompatActivity {
             }else{
                 APoint apoint= new APoint(marca,frecuencia,alcance,estado);
                 Global.listaAPoints.add(apoint);
-                Intent intent = new Intent(this, RouterActivity.class);
+                Intent intent = new Intent(this, ApointActivity.class);
                 startActivity(intent);
                 return true;
             }

@@ -12,6 +12,7 @@ import androidx.core.view.WindowInsetsCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import com.example.demo.CrearRouterActivity;
+import com.example.demo.CrearSwitchActivity;
 import com.example.demo.R;
 import com.example.demo.RouterActivity;
 import com.example.demo.base.Global;
@@ -55,7 +56,7 @@ public class SwitchActivity extends AppCompatActivity {
     }
 
     public void crearSwitch(View view){
-        Intent intent = new Intent(this, CrearRouterActivity.class);
+        Intent intent = new Intent(this, CrearSwitchActivity.class);
         startActivity(intent);
     }
 }

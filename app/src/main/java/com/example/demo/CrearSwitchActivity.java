@@ -18,6 +18,7 @@ import com.example.demo.databinding.ActivityCrearRouterBinding;
 import com.example.demo.databinding.ActivityCrearSwitchBinding;
 import com.example.demo.entity.Router;
 import com.example.demo.entity.Switch;
+import com.example.demo.entity.SwitchActivity;
 
 public class CrearSwitchActivity extends AppCompatActivity {
 
@@ -58,7 +59,7 @@ public class CrearSwitchActivity extends AppCompatActivity {
             }else{
                 Switch switche= new Switch(marca,modelo,cantidadPuertos,tipo,estado);
                 Global.listaSwitches.add(switche);
-                Intent intent = new Intent(this, RouterActivity.class);
+                Intent intent = new Intent(this, SwitchActivity.class);
                 startActivity(intent);
                 return true;
             }

@@ -39,7 +39,7 @@ public class DetallesApointActivity extends AppCompatActivity {
 
         posicion = intent.getIntExtra("posicion", -1);
 
-        APoint aPoint = (APoint) intent.getSerializableExtra("apoint");
+        APoint aPoint = (APoint) intent.getSerializableExtra("aPoint");
         binding.textView5.setText(aPoint.getMarca());
         String f = aPoint.getFrecuencia();
         ArrayAdapter<CharSequence> adapter = (ArrayAdapter<CharSequence>) binding.spinner.getAdapter(); //desde el xml
@@ -57,7 +57,7 @@ public class DetallesApointActivity extends AppCompatActivity {
         if (adapter1 != null) {
             for (int i = 0; i < adapter1.getCount(); i++) {
                 if (adapter1.getItem(i) != null && adapter1.getItem(i).toString().equals(estado)) {
-                    binding.spinner.setSelection(i);
+                    binding.spinner2.setSelection(i);
                     break;
                 }
             }
@@ -84,7 +84,7 @@ public class DetallesApointActivity extends AppCompatActivity {
             } else {
                 APoint aPoint = new APoint(marca, frecuencia, alcance, estado);
                 listaAPoints.set(posicion, aPoint);
-                Intent intent = new Intent(this, RouterActivity.class);
+                Intent intent = new Intent(this, ApointActivity.class);
                 startActivity(intent);
                 return true;
             }

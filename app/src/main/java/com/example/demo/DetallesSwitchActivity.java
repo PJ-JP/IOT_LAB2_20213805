@@ -37,7 +37,7 @@ public class DetallesSwitchActivity extends AppCompatActivity {
 
         Intent intent = getIntent();
         posicion = intent.getIntExtra("posicion", -1);
-        Switch switche = (Switch) intent.getSerializableExtra("router");
+        Switch switche = (Switch) intent.getSerializableExtra("switch");
         binding.textView5.setText(switche.getMarca());
         binding.textView6.setText(switche.getModelo());
         binding.textView7.setText(switche.getCantidadPuertos());
@@ -58,7 +58,7 @@ public class DetallesSwitchActivity extends AppCompatActivity {
         if (adapter != null) {
             for (int i = 0; i < adapter.getCount(); i++) {
                 if (adapter.getItem(i) != null && adapter.getItem(i).toString().equals(estadoDelSwitch)) {
-                    binding.spinner.setSelection(i);
+                    binding.spinner2.setSelection(i);
                     break;
                 }
             }
